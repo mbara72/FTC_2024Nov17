@@ -68,7 +68,7 @@ public class ProgrammingBoard1 {
         RevHubOrientationOnRobot revOrientation =
                 new RevHubOrientationOnRobot(RevHubOrientationOnRobot.
                         LogoFacingDirection.UP,
-                        RevHubOrientationOnRobot.UsbFacingDirection.FORWARD);
+                        RevHubOrientationOnRobot.UsbFacingDirection.BACKWARD);
         imu.initialize(new IMU.Parameters(revOrientation));
     }
 
