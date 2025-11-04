@@ -7,6 +7,7 @@ import com.qualcomm.robotcore.hardware.IMU;
 
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.teamcode.mechanisms.MecanumDrive;
+import com.acmerobotics.dashboard.telemetry.TelemetryPacket;
 
 @TeleOp
 public class FieldRelativeMecanumDriveOpMode extends OpMode {
@@ -16,6 +17,7 @@ public class FieldRelativeMecanumDriveOpMode extends OpMode {
     @Override
     public void init(){
         drive.init(hardwareMap);
+        TelemetryPacket packet1 = new TelemetryPacket();  // should draw field
 
         imu = hardwareMap.get(IMU.class, "imu");
         RevHubOrientationOnRobot RevOrientation =
