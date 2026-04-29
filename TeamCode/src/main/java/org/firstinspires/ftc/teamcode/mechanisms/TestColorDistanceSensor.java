@@ -21,6 +21,7 @@ public class TestColorDistanceSensor extends TestItem {
     @Override
     public void run(boolean on, Telemetry telemetry){
         telemetry.addData("Amount Red", colorSensor.red());
+        telemetry.addData("Amount Green", colorSensor.green());
         telemetry.addData("Amount Blue", colorSensor.blue());
         telemetry.addData("Distance (CM)", distanceSensor.getDistance(DistanceUnit.CM));
         telemetry.addData("Distance(IN)", distanceSensor.getDistance(DistanceUnit.INCH));
